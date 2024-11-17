@@ -36,7 +36,7 @@ function App() {
           return;
       }
 
-      Axios.post(`http://localhost:4000/api/v1/compile`, {
+      Axios.post(`https://eduverse-server-silk.onrender.com/api/v1/compile`, {
           code: userCode,
           language: userLang,
           input: userInput
