@@ -1,0 +1,49 @@
+ {/* Upper Section */}
+        <div className="flex flex-col lg:flex-row border-b border-richblack-700 pb-5">
+          {/* left section */}
+          <div className="lg:w-[50%] flex flex-wrap flex-row justify-between lg:border-r lg:border-richblack-700 pl-3 lg:pr-5 gap-3">
+            <div className="w-[48%] lg:w-[30%] flex flex-col gap-3">
+              <Link to={"/"}>
+                <img
+                  marg
+                  src={logo}
+                  alt="logo"
+                  className="object-contain ml-[-30px] m-0 p-0 block"
+                />
+              </Link>
+              <FooterCard data={footerLinks[0]} />
+              <div className="flex gap-3 text-lg text-richblack-400 -mt-5">
+                <Link to={"https://www.linkedin.com/in/sunny8080/"}>
+                  <FaLinkedin />
+                </Link>
+                <Link to={"https://twitter.com/sunny8080_"}>
+                  <FaTwitter />
+                </Link>
+                <Link to={"https://www.youtube.com/"}>
+                  <FaYoutube />
+                </Link>
+                <Link to={"https://www.facebook.com/sunny80801/"}>
+                  <FaFacebook />
+                </Link>
+                <Link to={"https://www.instagram.com/sunny8080_/"}>
+                  <FaInstagram />
+                </Link>
+              </div>
+            </div>
+
+            <div className="w-[48%] lg:w-[30%] flex flex-col">
+              <FooterCard data={footerLinks[1]} />
+              <FooterCard data={footerLinks[2]} />
+            </div>
+
+            <div className="w-[48%] lg:w-[30%] flex flex-col">
+              <FooterCard data={footerLinks[3]} />
+              <FooterCard data={footerLinks[4]} />
+            </div>
+          </div>
+
+          {/* Subjects, Languages, career building sections */}
+          <div className="lg:w-[50%] flex flex-row flex-wrap  justify-between pl-3 lg:pl-5">
+            {section2}
+          </div>
+        </div>
