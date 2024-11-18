@@ -55,7 +55,7 @@ const InternshipApplicationForm = () => {
     try {
       setIsSubmitting(true); // Set loading state
       const response = await fetch(
-        "http://localhost:4000/api/v1/internship/apply",
+        "https://eduverse-server-silk.onrender.com/api/v1/internship/apply",
         {
           method: "POST",
           headers: {
